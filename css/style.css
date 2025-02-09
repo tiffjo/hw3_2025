@@ -59,10 +59,12 @@ first div in the grid  and place it in the grid. */
 
 .about, .method, .clients, .contact{
     grid-column: 2 / span 1;
+    overflow: auto;
 }
 
 .about{
     grid-row: 2 / 3;
+    /* overflow: auto; */
 }
 .method{
     grid-row: 3 /4 ;
@@ -96,7 +98,7 @@ first div in the grid  and place it in the grid. */
 /* Add your media query here */
 
 @media only screen and (min-width: 800px){
-    .nav{
+    nav{
         padding: 30px 0px;
         text-align: end;
     }
@@ -120,7 +122,7 @@ first div in the grid  and place it in the grid. */
 
     .text-block{
         max-height: 250px;
-        overflow: auto;
+        overflow: scroll;
         /* box-sizing: border-box; */
     }
 }
